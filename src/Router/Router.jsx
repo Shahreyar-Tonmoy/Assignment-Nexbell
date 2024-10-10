@@ -7,6 +7,7 @@ import DashboardLayout from "../Dashboard/Layout/DashboardLayout";
 import DashboardHome from "../Dashboard/Home/DashboardHome";
 import AddProduct from "../Dashboard/All Component/AddProduct";
 import AllProducts from "../Dashboard/All Component/AllProducts";
+import UpdateProduct from "../Dashboard/All Component/UpdateProduct";
 
 const Router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const Router = createBrowserRouter([
       {
         path: "/dashboard/all-products",
         element: <AllProducts />,
+      },
+      {
+        path: "/dashboard/update/:id",
+        element: <UpdateProduct />,
       },
 
     ],
