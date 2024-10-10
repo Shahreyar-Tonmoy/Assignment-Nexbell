@@ -33,11 +33,11 @@ Follow these steps to set up NexShop locally:
 
 ### Installation
 
-1. Clone the repository:
+To get started with NexShop, clone the repository and install the necessary dependencies:
 
-   ```bash
-   git clone https://github.com/Shahreyar-Tonmoy/Assignment-Nexbell
-
+```bash
+# Clone the repository
+git clone https://github.com/Shahreyar-Tonmoy/Assignment-Nexbell
 
 # Navigate to the project directory
 cd Assignment-Nexbell
