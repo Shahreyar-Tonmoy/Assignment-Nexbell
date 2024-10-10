@@ -1,8 +1,52 @@
-# React + Vite
+# NexShop - E-commerce Shop Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NexShop is a modern e-commerce platform designed for seamless product management and an intuitive user experience. Users can easily search, filter, and sort products, while administrators have the ability to manage product listings through a dedicated dashboard.
 
-Currently, two official plugins are available:
+## Live Demo
+[Visit NexShop](https://nex-shop.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+### For Users:
+1. **Product Search**: Easily search for products using keywords for fast results.
+2. **Advanced Filtering**: Filter by categories, price ranges, brands, and more.
+3. **Product Sorting**: Sort products by price, popularity, or new arrivals.
+4. **Related Products**: View recommended products based on current browsing.
+
+### For Admins:
+1. **Product Management**: Add, update, and delete product listings from the dashboard.
+2. **Real-Time Form Validation**: Instant feedback for incorrect form entries using **React Hook Form** and **Yup** validation.
+3. **Preview Products**: Preview product listings before publishing them.
+4. **Real-Time Dashboard Updates**: Manage product listings and see updates without refreshing the page.
+
+## Technologies Used
+- **React.js**: For building the frontend.
+- **React Hook Form**: For handling forms and validations.
+- **Axios**: For handling API requests.
+- **Tanstack Query**: For handling fetch requests.
+- **Tailwind CSS**: For a modern and responsive UI.
+- **Vercel**: For server deployment.
+
+## Getting Started
+
+Follow these steps to set up NexShop locally:
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Shahreyar-Tonmoy/Assignment-Nexbell
+
+
+# Navigate to the project directory
+cd Assignment-Nexbell
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+
+
+

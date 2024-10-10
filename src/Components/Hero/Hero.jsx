@@ -5,7 +5,7 @@ const Hero = () => {
         className="hero min-h-[40vh] lg:min-h-[85vh] bg-contain bg-no-repeat w-full"
         style={{
           backgroundImage:
-            "url(https://i.ibb.co.com/R6698k6/E-Commerce-Facebook-Ad.png)",
+            "url(https://i.ibb.co.com/DgxDQCJ/E-Commerce-Facebook-Ad-1.png)",
         }}
       >
         <div className=""></div>
