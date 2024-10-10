@@ -6,6 +6,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import { SearchModal } from "../Search Modal/SearchModal";
 import { LuSearch } from "react-icons/lu";
 import { MenuDrawar } from "../Manu Drawar/MenuDrawar";
+import { IoSpeedometerSharp } from "react-icons/io5";
 
 
 
@@ -113,6 +114,40 @@ const MobileNav = () => {
           </div>
         )}
       </NavLink>
+
+      <NavLink to="/dashboard">
+        {({ isActive, isPending }) => (
+          <div
+            className={`relative mb-2 ${isPending ? "pending" : ""} ${
+              isActive
+                ? "transition-all duration-700 ease-in-out rounded-full flex flex-col items-center"
+                : "p-2 rounded-full flex flex-col items-center"
+            }`}
+          >
+            <div className="relative mb-2">
+              {isActive ? (
+                <div className="absolute inset-0 flex justify-center items-center -top-6">
+                  <div className="p-2 rounded-full bg-white border-[6px] border-[#94d2bc]  ">
+                    <IoSpeedometerSharp 
+                      size={24}
+                      className="text-[#94d2bc]"
+                    />
+                  </div>
+                </div>
+              ) : (
+                <div className="p-2 rounded-full   ">
+                  <IoSpeedometerSharp size={24} className="text-white" />
+                </div>
+              )}
+            </div>
+            {isActive && (
+              <span className="text-sm text-white mt-2 font-bold ">Dashboard</span>
+            )}
+          </div>
+        )}
+      </NavLink>
+
+
       <NavLink to={pathname} onClick={()=>setOpenMenu(true)}>
         {({ openMenu }) => (
           <div

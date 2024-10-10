@@ -1,3 +1,6 @@
+import { AiOutlineProduct } from "react-icons/ai";
+import { FaHome } from "react-icons/fa";
+import { IoMdAddCircleOutline } from "react-icons/io";
 import { IoSpeedometerSharp } from "react-icons/io5";
 import { Link, NavLink } from "react-router-dom";
 
@@ -33,7 +36,7 @@ const DashBoardSideBar = () => {
             }
           >
             <IoSpeedometerSharp />
-            <span className="pr-1 font-semibold">Home</span>
+            <span className="pr-1 font-semibold">Dashboard</span>
           </NavLink>
 
           <NavLink
@@ -46,7 +49,7 @@ const DashBoardSideBar = () => {
               }`
             }
           >
-            <IoSpeedometerSharp />
+            <IoMdAddCircleOutline  />
             <span className="pr-1 font-semibold">Add Product</span>
           </NavLink>
 
@@ -60,8 +63,24 @@ const DashBoardSideBar = () => {
               }`
             }
           >
-            <IoSpeedometerSharp />
+            <AiOutlineProduct  />
             <span className="pr-1 font-semibold">All Product</span>
+          </NavLink>
+
+
+
+          <NavLink
+            to="/"
+            className={({ isActive, isPending }) =>
+              `${isPending ? "pending" : ""} ${
+                isActive
+                  ? "outline-none bg-[#94d2bc] text-[#0c4657] focus:outline-none w-full px-5 py-2 items-center space-x-4 text-sm flex"
+                  : "outline-none hover:bg-[#94d2bc] hover:text-[#0c4657] focus:outline-none w-full px-5 py-2 items-center space-x-4 text-[#e2e2e2] text-sm flex transition duration-200"
+              }`
+            }
+          >
+            <FaHome  />
+            <span className="pr-1 font-semibold">Home</span>
           </NavLink>
 
 

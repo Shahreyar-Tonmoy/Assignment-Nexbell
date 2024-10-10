@@ -30,7 +30,7 @@ const ItemDetails = () => {
         // Return the fetched data
         return {
           Item: itemResponse.data,
-          ItemRandom: itemRandomResponse.data,
+          ItemRandom: itemRandomResponse.data.products.slice(0, 10),
         };
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -389,9 +389,9 @@ const ItemDetails = () => {
         <div className="mt-10 container mx-auto ">
           <h1 className="text-3xl font-bold p-5">You Might Also Like</h1>
 
-          {data?.ItemRandom?.products?.length > 0 ? (
+          {data?.ItemRandom?.length > 0 ? (
             <div className="grid gap-3 grid-cols-1 md:grid-cols-3 border-none lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5">
-              {data?.ItemRandom?.products?.map((data, index) => (
+              {data?.ItemRandom?.map((data, index) => (
                 <div
                   key={index}
                   className="  rounded-none w-80 md:w-64 xl:w-64 2xl:w-72  border mx-auto border-[#94d2bc] "
