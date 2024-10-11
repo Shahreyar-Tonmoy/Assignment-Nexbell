@@ -25,7 +25,7 @@ NexShop is a modern e-commerce platform designed for seamless product management
 - **Axios**: For handling API requests.
 - **Tanstack Query**: For handling fetch requests.
 - **Tailwind CSS**: For a modern and responsive UI.
-- **Vercel**: For server deployment.
+- **Netlify**: For server deployment.
 
 ## Getting Started
 
