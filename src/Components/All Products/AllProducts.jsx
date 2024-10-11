@@ -32,7 +32,7 @@ const AllProducts = () => {
             {AllItem.map((data, index) => (
               <div
                 key={index}
-                className="  rounded-none w-96 md:w-80 lg:w-64 xl:w-64 2xl:w-72  border mx-auto border-[#94d2bc] "
+                className="  rounded-none w-80 lg:w-64 xl:w-64 2xl:w-72  border mx-auto border-[#94d2bc] "
               >
                 <Link>
                   <figure className="p-3 ">

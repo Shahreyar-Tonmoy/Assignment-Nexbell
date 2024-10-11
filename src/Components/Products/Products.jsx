@@ -290,11 +290,11 @@ const Products = () => {
             />
             <div className="flex items-center justify-between">
               <div className="bg-[#94D2BC] px-3 py-2 text-black flex gap-3 rounded-md justify-between items-center">
-                <span>TK</span>
+                <span>$</span>
                 <span>{priceRange[0]}</span>
               </div>
               <div className="bg-[#94D2BC] px-3 py-2 text-black flex gap-3 rounded-md justify-between items-center">
-                <span>TK</span>
+                <span>$</span>
                 <span>{priceRange[1]}</span>
               </div>
             </div>
@@ -520,7 +520,7 @@ const Products = () => {
               {paginatedItems?.map((data, index) => (
                 <div
                   key={index}
-                  className="  rounded-none w-96 md:w-80 lg:w-64 xl:w-64 2xl:w-72  border mx-auto border-[#94d2bc] "
+                  className="  rounded-none w-80 lg:w-64 xl:w-64 2xl:w-72  border mx-auto border-[#94d2bc] "
                 >
                   <Link>
                     <figure className="p-3 ">
